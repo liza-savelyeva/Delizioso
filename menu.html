@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delizioso</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="my_style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg mx-4 mt-3 mb-5">
+        <div class="container-fluid align-items-baseline">
+            <a class="h1 navbar-brand" href="#">
+                <img src="img/logo.svg" alt="logo" class="d-inline-block align-text-center me-2" width="41">
+                Delizi<span class="color_orange">oso</span>
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <a class="h1 navbar-brand" href="#">Delizi<span class="color_orange">oso</span></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-lg-4 my-2 my-lg-0">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-lg-4 my-2 my-lg-0">
+                  <a class="nav-link active" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item mx-lg-4 my-2 my-lg-0">
+                    <a class="nav-link" href="about_us.html">About us</a>
+                </li>
+              </ul>
+              <a type="button" class="btn btn-success ms-auto px-5 py-3 mt-5 mt-lg-0" href="log_in.html">Log in</a>
+            </div>
+            
+          </div>
+        </div>
+    </nav>
+
+    <p class="h1 size_big text-center my-5">Menu</p>
+
+    <ul class="nav nav-pills mb-3 justify-content-center col-11 col-lg-10 col-xl-7"  id="pills-tab" role="tablist">
+        <li class="nav-item me-3" role="presentation">
+          <button class="nav-link active px-5 py-3" id="pills-breakfast-tab" data-bs-toggle="pill" data-bs-target="#pills-breakfast" 
+          type="button" role="tab" aria-controls="pills-breakfast" aria-selected="true">Breakfast</button>
+        </li>
+        <li class="nav-item me-3" role="presentation">
+          <button class="nav-link px-5 py-3" id="pills-lunch-tab" data-bs-toggle="pill" data-bs-target="#pills-lunch" 
+          type="button" role="tab" aria-controls="pills-lunch" aria-selected="false">Lunch</button>
+        </li>
+        <li class="nav-item me-3" role="presentation">
+          <button class="nav-link px-5 py-3" id="pills-dinner-tab" data-bs-toggle="pill" data-bs-target="#pills-dinner" 
+          type="button" role="tab" aria-controls="pills-dinner" aria-selected="false">Dinner</button>
+        </li>
+        <li class="nav-item me-3" role="presentation">
+            <button class="nav-link px-5 py-3" id="pills-dessert-tab" data-bs-toggle="pill" data-bs-target="#pills-dessert" 
+            type="button" role="tab" aria-controls="pills-dessert" aria-selected="false">Dessert</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link px-5 py-3" id="pills-drink-tab" data-bs-toggle="pill" data-bs-target="#pills-drink" 
+            type="button" role="tab" aria-controls="pills-drink" aria-selected="false">Drink</button>
+        </li>
+      </ul>
+
+      <div class="tab-content text-center" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-breakfast" role="tabpanel" aria-labelledby="pills-breakfast-tab" tabindex="0">
+          <div id="carouselMenu1" class="carousel slide my-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/breakfast1.svg" alt="breakfast1" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Croissant</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/breakfast2.svg" alt="breakfast2" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Egg and sausage</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/breakfast3.svg" alt="breakfast3" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Waffles</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/breakfast4.svg" alt="breakfast4" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Waffles and egg</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/breakfast5.svg" alt="breakfast5" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Pancakes</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/breakfast6.svg" alt="breakfast6" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Salad</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+    
+            <div class="container mt-3">
+              <div class="row align-items-center">
+                <div class="col">
+                  <button class="carousel-control-prev float-end" type="button" data-bs-target="#carouselMenu1" data-bs-slide="prev">
+                    <
+                  </button>      
+                </div>
+                <div class="col">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMenu1" data-bs-slide-to="0" class="active me-3" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMenu1" data-bs-slide-to="1" class="me-3" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMenu1" data-bs-slide-to="2" class="me-3" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselMenu1" data-bs-slide-to="3" class="me-3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselMenu1" data-bs-slide-to="4" class="me-3" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselMenu1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                </div>
+                <div class="col">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu1" data-bs-slide="next">
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-lunch" role="tabpanel" aria-labelledby="pills-lunch-tab" tabindex="0">
+          <div id="carouselMenu2" class="carousel slide my-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/Spaghetti.svg" alt="Spaghetti" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Spaghetti</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/Gnocchi.svg" alt="Gnocchi" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Gnocchi</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/Ravioli.svg" alt="Ravioli" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Ravioli</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/Penne_Alla_Vodak.svg" alt="Penne_Alla_Vodak" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Penne Alla Vodak</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/Risoto.svg" alt="Risoto" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Risoto</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/Splitza_Signature.svg" alt="Splitza_Signature" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Splitza Signature</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+    
+            <div class="container mt-3">
+              <div class="row align-items-center">
+                <div class="col">
+                  <button class="carousel-control-prev float-end" type="button" data-bs-target="#carouselMenu2" data-bs-slide="prev">
+                    <
+                  </button>      
+                </div>
+                <div class="col">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="0" class="active me-3" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="1" class="me-3" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="2" class="me-3" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="3" class="me-3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="4" class="me-3" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselMenu2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                </div>
+                <div class="col">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu2" data-bs-slide="next">
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-dinner" role="tabpanel" aria-labelledby="pills-dinner-tab" tabindex="0">
+          <div id="carouselMenu3" class="carousel slide my-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dinner1.svg" alt="dinner1" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Zuchini</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dinner2.svg" alt="dinner2" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Soup</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dinner3.svg" alt="dinner3" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Sandwich</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dinner4.svg" alt="dinner4" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Cherry tomato</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dinner5.svg" alt="dinner5" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Broccoli</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dinner6.svg" alt="dinner6" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Dumpling</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+    
+            <div class="container mt-3">
+              <div class="row align-items-center">
+                <div class="col">
+                  <button class="carousel-control-prev float-end" type="button" data-bs-target="#carouselMenu3" data-bs-slide="prev">
+                    <
+                  </button>      
+                </div>
+                <div class="col">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMenu3" data-bs-slide-to="0" class="active me-3" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMenu3" data-bs-slide-to="1" class="me-3" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMenu3" data-bs-slide-to="2" class="me-3" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselMenu3" data-bs-slide-to="3" class="me-3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselMenu3" data-bs-slide-to="4" class="me-3" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselMenu3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                </div>
+                <div class="col">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu3" data-bs-slide="next">
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-dessert" role="tabpanel" aria-labelledby="pills-dessert-tab" tabindex="0">
+          <div id="carouselMenu4" class="carousel slide my-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dessert1.svg" alt="dessert1" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Blueberry</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dessert2.svg" alt="dessert2" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Cranberry</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dessert3.svg" alt="dessert3" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Raspberry</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dessert4.svg" alt="dessert4" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Cupcake</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dessert5.svg" alt="dessert5" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Almond</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/dessert6.svg" alt="dessert6" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Cheesecake</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+    
+            <div class="container mt-3">
+              <div class="row align-items-center">
+                <div class="col">
+                  <button class="carousel-control-prev float-end" type="button" data-bs-target="#carouselMenu4" data-bs-slide="prev">
+                    <
+                  </button>      
+                </div>
+                <div class="col">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMenu4" data-bs-slide-to="0" class="active me-3" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMenu4" data-bs-slide-to="1" class="me-3" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMenu4" data-bs-slide-to="2" class="me-3" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselMenu4" data-bs-slide-to="3" class="me-3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselMenu4" data-bs-slide-to="4" class="me-3" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselMenu4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                </div>
+                <div class="col">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu4" data-bs-slide="next">
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-drink" role="tabpanel" aria-labelledby="pills-drink-tab" tabindex="0">
+          <div id="carouselMenu5" class="carousel slide my-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/drink1.svg" alt="drink1" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Lemon</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/drink2.svg" alt="drink2" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Raspberry</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/drink3.svg" alt="drink3" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Greenary</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/drink4.svg" alt="drink4" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Green tea</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/drink5.svg" alt="drink5" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Black tea</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <div class="container text-center text-md-start bg_color_beige rounded-5 py-4 px-3 px-md-5 col-11 col-lg-10 col-xl-7">
+                  <div class="row align-items-center">
+                    <div class="col-md">
+                      <img src="img/drink6.svg" alt="drink6" class="img-fluid">
+                    </div>
+                    <div class="col-md">
+                      <p class="h1 mb-3">Coffee</p>
+                      <img src="img/stars.svg" alt="stars" class="img-fluid">
+                      <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam.</p>
+                      <p class="d-flex align-items-center justify-content-between h1">$12.05
+                      <button type="button" class="btn btn-secondary px-4 px-lg-5 py-3">Order now</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+    
+            <div class="container mt-3">
+              <div class="row align-items-center">
+                <div class="col">
+                  <button class="carousel-control-prev float-end" type="button" data-bs-target="#carouselMenu5" data-bs-slide="prev">
+                    <
+                  </button>      
+                </div>
+                <div class="col">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMenu5" data-bs-slide-to="0" class="active me-3" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMenu5" data-bs-slide-to="1" class="me-3" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMenu5" data-bs-slide-to="2" class="me-3" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselMenu5" data-bs-slide-to="3" class="me-3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselMenu5" data-bs-slide-to="4" class="me-3" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselMenu5" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                </div>
+                <div class="col">
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu5" data-bs-slide="next">
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="container-fluid bg_color_brown p-5">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 me-xl-5">
+          <a class="h1 navbar-brand" href="#">
+            <img src="img/logo.svg" alt="logo" class="d-inline-block align-text-center me-2" width="41">
+            <span class="color_white">Delizi</span><span class="color_orange">oso</span>
+          </a>
+          <p class="my-5">
+            Viverra gravida morbi egestas facilisis tortor netus non duis tempor. 
+          </p>
+          <img src="img/twitter.svg" alt="twitter" class="img-fluid me-3">
+          <img src="img/Instagram.svg" alt="Instagram" class="img-fluid me-3">
+          <img src="img/Facebook.svg" alt="Facebook" class="img-fluid">
+        </div>
+        <div class="col-md-7 col-lg-2 ms-xl-5 mt-5">
+          <p class="h3 color_orange">Page</p>
+          <p>Home</p>
+          <p>Menu</p>
+          <p>Order online</p>
+          <p>Catering</p>
+          <p>Reservation</p>
+        </div>
+        <div class="col-md col-lg ms-xl-5 mt-5">
+          <p class="h3 color_orange">Information</p>
+          <p>About us</p>
+          <p>Testimonial</p>
+          <p>Event</p>
+        </div>
+        <div class="col-md-5 col-lg-3 mt-5">
+          <p class="h3 color_orange">Get in touch</p>
+          <p>3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat</p>
+          <p>delizioso@gmail.com</p>
+          <p>+123 4567 8901</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl text-center mt-5">
+          Copyright &copy; 2022 Delizioso
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="my_js.js"></script>
+</body>
+</html>
